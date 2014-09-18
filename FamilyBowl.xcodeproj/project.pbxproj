@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF45945319C3BF2E00E48721 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45945219C3BF2E00E48721 /* Foundation.framework */; };
+		FF45945519C3BF2E00E48721 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45945419C3BF2E00E48721 /* CoreGraphics.framework */; };
+		FF45945719C3BF2E00E48721 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45945619C3BF2E00E48721 /* UIKit.framework */; };
+		FF45945919C3BF2E00E48721 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45945819C3BF2E00E48721 /* CoreData.framework */; };
+		FF45945F19C3BF2E00E48721 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF45945D19C3BF2E00E48721 /* InfoPlist.strings */; };
+		FF45946119C3BF2E00E48721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45946019C3BF2E00E48721 /* main.m */; };
+		FF45946519C3BF2E00E48721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45946419C3BF2E00E48721 /* AppDelegate.m */; };
+		FF45946819C3BF2E00E48721 /* FamilyBowl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF45946619C3BF2E00E48721 /* FamilyBowl.xcdatamodeld */; };
+		FF45946A19C3BF2E00E48721 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF45946919C3BF2E00E48721 /* Images.xcassets */; };
+		FF45947119C3BF2E00E48721 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45947019C3BF2E00E48721 /* XCTest.framework */; };
+		FF45947219C3BF2E00E48721 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45945219C3BF2E00E48721 /* Foundation.framework */; };
+		FF45947319C3BF2E00E48721 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45945619C3BF2E00E48721 /* UIKit.framework */; };
+		FF45947419C3BF2E00E48721 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45945819C3BF2E00E48721 /* CoreData.framework */; };
+		FF45947C19C3BF2E00E48721 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF45947A19C3BF2E00E48721 /* InfoPlist.strings */; };
+		FF45947E19C3BF2E00E48721 /* FamilyBowlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45947D19C3BF2E00E48721 /* FamilyBowlTests.m */; };
+		FF45948819C3BF4400E48721 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF45948719C3BF4400E48721 /* MainStoryboard.storyboard */; };
+		FF45948B19C3C08800E48721 /* MemoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45948A19C3C08800E48721 /* MemoriesTableViewController.m */; };
+		FF45948F19C3C0B400E48721 /* FamilyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45948E19C3C0B400E48721 /* FamilyTableViewController.m */; };
+		FF45949319C3C11C00E48721 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45949219C3C11C00E48721 /* LoginViewController.m */; };
+		FF45949619C3C13200E48721 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45949519C3C13200E48721 /* RegisterViewController.m */; };
+		FF45949819C3C16A00E48721 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45949719C3C16A00E48721 /* Parse.framework */; };
+		FF4594A519C3D1C200E48721 /* FamilyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4594A419C3D1C200E48721 /* FamilyDetailViewController.m */; };
+		FF4594A719C40B7E00E48721 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594A619C40B7E00E48721 /* AudioToolbox.framework */; };
+		FF4594A919C40B8600E48721 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594A819C40B8600E48721 /* CFNetwork.framework */; };
+		FF4594AB19C40B9200E48721 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594AA19C40B9200E48721 /* CoreLocation.framework */; };
+		FF4594AD19C40B9900E48721 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594AC19C40B9900E48721 /* libz.dylib */; };
+		FF4594AF19C40BA200E48721 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594AE19C40BA200E48721 /* MobileCoreServices.framework */; };
+		FF4594B119C40BA800E48721 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594B019C40BA800E48721 /* QuartzCore.framework */; };
+		FF4594B319C40BAE00E48721 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594B219C40BAE00E48721 /* Security.framework */; };
+		FF4594B519C40BB600E48721 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594B419C40BB600E48721 /* StoreKit.framework */; };
+		FF4594B719C40BBD00E48721 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4594B619C40BBD00E48721 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF45947519C3BF2E00E48721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF45944719C3BF2E00E48721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF45944E19C3BF2E00E48721;
+			remoteInfo = FamilyBowl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF45944F19C3BF2E00E48721 /* FamilyBowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyBowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF45945219C3BF2E00E48721 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF45945419C3BF2E00E48721 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF45945619C3BF2E00E48721 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF45945819C3BF2E00E48721 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FF45945C19C3BF2E00E48721 /* FamilyBowl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FamilyBowl-Info.plist"; sourceTree = "<group>"; };
+		FF45945E19C3BF2E00E48721 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF45946019C3BF2E00E48721 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF45946219C3BF2E00E48721 /* FamilyBowl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FamilyBowl-Prefix.pch"; sourceTree = "<group>"; };
+		FF45946319C3BF2E00E48721 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF45946419C3BF2E00E48721 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF45946719C3BF2E00E48721 /* FamilyBowl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FamilyBowl.xcdatamodel; sourceTree = "<group>"; };
+		FF45946919C3BF2E00E48721 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF45946F19C3BF2E00E48721 /* FamilyBowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyBowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF45947019C3BF2E00E48721 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF45947919C3BF2E00E48721 /* FamilyBowlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FamilyBowlTests-Info.plist"; sourceTree = "<group>"; };
+		FF45947B19C3BF2E00E48721 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF45947D19C3BF2E00E48721 /* FamilyBowlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyBowlTests.m; sourceTree = "<group>"; };
+		FF45948719C3BF4400E48721 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FF45948919C3C08800E48721 /* MemoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoriesTableViewController.h; sourceTree = "<group>"; };
+		FF45948A19C3C08800E48721 /* MemoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoriesTableViewController.m; sourceTree = "<group>"; };
+		FF45948D19C3C0B400E48721 /* FamilyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyTableViewController.h; sourceTree = "<group>"; };
+		FF45948E19C3C0B400E48721 /* FamilyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyTableViewController.m; sourceTree = "<group>"; };
+		FF45949119C3C11C00E48721 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FF45949219C3C11C00E48721 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FF45949419C3C13200E48721 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FF45949519C3C13200E48721 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FF45949719C3C16A00E48721 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = FamilyBowl/Parse.framework; sourceTree = "<group>"; };
+		FF4594A319C3D1C200E48721 /* FamilyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FamilyDetailViewController.h; path = FamilyBowl/FamilyDetailViewController.h; sourceTree = "<group>"; };
+		FF4594A419C3D1C200E48721 /* FamilyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyDetailViewController.m; path = FamilyBowl/FamilyDetailViewController.m; sourceTree = "<group>"; };
+		FF4594A619C40B7E00E48721 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF4594A819C40B8600E48721 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FF4594AA19C40B9200E48721 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FF4594AC19C40B9900E48721 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FF4594AE19C40BA200E48721 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FF4594B019C40BA800E48721 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FF4594B219C40BAE00E48721 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FF4594B419C40BB600E48721 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FF4594B619C40BBD00E48721 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF45944C19C3BF2E00E48721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4594B719C40BBD00E48721 /* SystemConfiguration.framework in Frameworks */,
+				FF4594B519C40BB600E48721 /* StoreKit.framework in Frameworks */,
+				FF4594B319C40BAE00E48721 /* Security.framework in Frameworks */,
+				FF4594B119C40BA800E48721 /* QuartzCore.framework in Frameworks */,
+				FF4594AF19C40BA200E48721 /* MobileCoreServices.framework in Frameworks */,
+				FF4594AD19C40B9900E48721 /* libz.dylib in Frameworks */,
+				FF4594AB19C40B9200E48721 /* CoreLocation.framework in Frameworks */,
+				FF45945519C3BF2E00E48721 /* CoreGraphics.framework in Frameworks */,
+				FF4594A919C40B8600E48721 /* CFNetwork.framework in Frameworks */,
+				FF4594A719C40B7E00E48721 /* AudioToolbox.framework in Frameworks */,
+				FF45945919C3BF2E00E48721 /* CoreData.framework in Frameworks */,
+				FF45945719C3BF2E00E48721 /* UIKit.framework in Frameworks */,
+				FF45945319C3BF2E00E48721 /* Foundation.framework in Frameworks */,
+				FF45949819C3C16A00E48721 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF45946C19C3BF2E00E48721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45947119C3BF2E00E48721 /* XCTest.framework in Frameworks */,
+				FF45947419C3BF2E00E48721 /* CoreData.framework in Frameworks */,
+				FF45947319C3BF2E00E48721 /* UIKit.framework in Frameworks */,
+				FF45947219C3BF2E00E48721 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF45944619C3BF2E00E48721 = {
+			isa = PBXGroup;
+			children = (
+				FF45949719C3C16A00E48721 /* Parse.framework */,
+				FF45945A19C3BF2E00E48721 /* FamilyBowl */,
+				FF45947719C3BF2E00E48721 /* FamilyBowlTests */,
+				FF45945119C3BF2E00E48721 /* Frameworks */,
+				FF45945019C3BF2E00E48721 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF45945019C3BF2E00E48721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF45944F19C3BF2E00E48721 /* FamilyBowl.app */,
+				FF45946F19C3BF2E00E48721 /* FamilyBowlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF45945119C3BF2E00E48721 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF4594B619C40BBD00E48721 /* SystemConfiguration.framework */,
+				FF4594B419C40BB600E48721 /* StoreKit.framework */,
+				FF4594B219C40BAE00E48721 /* Security.framework */,
+				FF4594B019C40BA800E48721 /* QuartzCore.framework */,
+				FF4594AE19C40BA200E48721 /* MobileCoreServices.framework */,
+				FF4594AC19C40B9900E48721 /* libz.dylib */,
+				FF4594AA19C40B9200E48721 /* CoreLocation.framework */,
+				FF4594A819C40B8600E48721 /* CFNetwork.framework */,
+				FF4594A619C40B7E00E48721 /* AudioToolbox.framework */,
+				FF45945219C3BF2E00E48721 /* Foundation.framework */,
+				FF45945419C3BF2E00E48721 /* CoreGraphics.framework */,
+				FF45945619C3BF2E00E48721 /* UIKit.framework */,
+				FF45945819C3BF2E00E48721 /* CoreData.framework */,
+				FF45947019C3BF2E00E48721 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF45945A19C3BF2E00E48721 /* FamilyBowl */ = {
+			isa = PBXGroup;
+			children = (
+				FF45948719C3BF4400E48721 /* MainStoryboard.storyboard */,
+				FF45946319C3BF2E00E48721 /* AppDelegate.h */,
+				FF45946419C3BF2E00E48721 /* AppDelegate.m */,
+				FF4594A219C3CE7500E48721 /* Login */,
+				FF45948C19C3C09400E48721 /* Memories */,
+				FF45949019C3C0B700E48721 /* Family */,
+				FF45946919C3BF2E00E48721 /* Images.xcassets */,
+				FF45946619C3BF2E00E48721 /* FamilyBowl.xcdatamodeld */,
+				FF45945B19C3BF2E00E48721 /* Supporting Files */,
+			);
+			path = FamilyBowl;
+			sourceTree = "<group>";
+		};
+		FF45945B19C3BF2E00E48721 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF45945C19C3BF2E00E48721 /* FamilyBowl-Info.plist */,
+				FF45945D19C3BF2E00E48721 /* InfoPlist.strings */,
+				FF45946019C3BF2E00E48721 /* main.m */,
+				FF45946219C3BF2E00E48721 /* FamilyBowl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF45947719C3BF2E00E48721 /* FamilyBowlTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF45947D19C3BF2E00E48721 /* FamilyBowlTests.m */,
+				FF45947819C3BF2E00E48721 /* Supporting Files */,
+			);
+			path = FamilyBowlTests;
+			sourceTree = "<group>";
+		};
+		FF45947819C3BF2E00E48721 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF45947919C3BF2E00E48721 /* FamilyBowlTests-Info.plist */,
+				FF45947A19C3BF2E00E48721 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF45948C19C3C09400E48721 /* Memories */ = {
+			isa = PBXGroup;
+			children = (
+				FF45948919C3C08800E48721 /* MemoriesTableViewController.h */,
+				FF45948A19C3C08800E48721 /* MemoriesTableViewController.m */,
+			);
+			name = Memories;
+			sourceTree = "<group>";
+		};
+		FF45949019C3C0B700E48721 /* Family */ = {
+			isa = PBXGroup;
+			children = (
+				FF45948D19C3C0B400E48721 /* FamilyTableViewController.h */,
+				FF45948E19C3C0B400E48721 /* FamilyTableViewController.m */,
+				FF4594A319C3D1C200E48721 /* FamilyDetailViewController.h */,
+				FF4594A419C3D1C200E48721 /* FamilyDetailViewController.m */,
+			);
+			name = Family;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FF4594A219C3CE7500E48721 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FF45949119C3C11C00E48721 /* LoginViewController.h */,
+				FF45949219C3C11C00E48721 /* LoginViewController.m */,
+				FF45949419C3C13200E48721 /* RegisterViewController.h */,
+				FF45949519C3C13200E48721 /* RegisterViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF45944E19C3BF2E00E48721 /* FamilyBowl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF45948119C3BF2E00E48721 /* Build configuration list for PBXNativeTarget "FamilyBowl" */;
+			buildPhases = (
+				FF45944B19C3BF2E00E48721 /* Sources */,
+				FF45944C19C3BF2E00E48721 /* Frameworks */,
+				FF45944D19C3BF2E00E48721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FamilyBowl;
+			productName = FamilyBowl;
+			productReference = FF45944F19C3BF2E00E48721 /* FamilyBowl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF45946E19C3BF2E00E48721 /* FamilyBowlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF45948419C3BF2E00E48721 /* Build configuration list for PBXNativeTarget "FamilyBowlTests" */;
+			buildPhases = (
+				FF45946B19C3BF2E00E48721 /* Sources */,
+				FF45946C19C3BF2E00E48721 /* Frameworks */,
+				FF45946D19C3BF2E00E48721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF45947619C3BF2E00E48721 /* PBXTargetDependency */,
+			);
+			name = FamilyBowlTests;
+			productName = FamilyBowlTests;
+			productReference = FF45946F19C3BF2E00E48721 /* FamilyBowlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF45944719C3BF2E00E48721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = HeapStack;
+				TargetAttributes = {
+					FF45946E19C3BF2E00E48721 = {
+						TestTargetID = FF45944E19C3BF2E00E48721;
+					};
+				};
+			};
+			buildConfigurationList = FF45944A19C3BF2E00E48721 /* Build configuration list for PBXProject "FamilyBowl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF45944619C3BF2E00E48721;
+			productRefGroup = FF45945019C3BF2E00E48721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF45944E19C3BF2E00E48721 /* FamilyBowl */,
+				FF45946E19C3BF2E00E48721 /* FamilyBowlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF45944D19C3BF2E00E48721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45948819C3BF4400E48721 /* MainStoryboard.storyboard in Resources */,
+				FF45945F19C3BF2E00E48721 /* InfoPlist.strings in Resources */,
+				FF45946A19C3BF2E00E48721 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF45946D19C3BF2E00E48721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45947C19C3BF2E00E48721 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF45944B19C3BF2E00E48721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45948B19C3C08800E48721 /* MemoriesTableViewController.m in Sources */,
+				FF45946519C3BF2E00E48721 /* AppDelegate.m in Sources */,
+				FF45949319C3C11C00E48721 /* LoginViewController.m in Sources */,
+				FF4594A519C3D1C200E48721 /* FamilyDetailViewController.m in Sources */,
+				FF45946819C3BF2E00E48721 /* FamilyBowl.xcdatamodeld in Sources */,
+				FF45949619C3C13200E48721 /* RegisterViewController.m in Sources */,
+				FF45948F19C3C0B400E48721 /* FamilyTableViewController.m in Sources */,
+				FF45946119C3BF2E00E48721 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF45946B19C3BF2E00E48721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45947E19C3BF2E00E48721 /* FamilyBowlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF45947619C3BF2E00E48721 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF45944E19C3BF2E00E48721 /* FamilyBowl */;
+			targetProxy = FF45947519C3BF2E00E48721 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF45945D19C3BF2E00E48721 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF45945E19C3BF2E00E48721 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF45947A19C3BF2E00E48721 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF45947B19C3BF2E00E48721 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF45947F19C3BF2E00E48721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF45948019C3BF2E00E48721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF45948219C3BF2E00E48721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FamilyBowl",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FamilyBowl/FamilyBowl-Prefix.pch";
+				INFOPLIST_FILE = "FamilyBowl/FamilyBowl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF45948319C3BF2E00E48721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FamilyBowl",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FamilyBowl/FamilyBowl-Prefix.pch";
+				INFOPLIST_FILE = "FamilyBowl/FamilyBowl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF45948519C3BF2E00E48721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FamilyBowl.app/FamilyBowl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FamilyBowl/FamilyBowl-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FamilyBowlTests/FamilyBowlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF45948619C3BF2E00E48721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FamilyBowl.app/FamilyBowl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FamilyBowl/FamilyBowl-Prefix.pch";
+				INFOPLIST_FILE = "FamilyBowlTests/FamilyBowlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF45944A19C3BF2E00E48721 /* Build configuration list for PBXProject "FamilyBowl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF45947F19C3BF2E00E48721 /* Debug */,
+				FF45948019C3BF2E00E48721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF45948119C3BF2E00E48721 /* Build configuration list for PBXNativeTarget "FamilyBowl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF45948219C3BF2E00E48721 /* Debug */,
+				FF45948319C3BF2E00E48721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF45948419C3BF2E00E48721 /* Build configuration list for PBXNativeTarget "FamilyBowlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF45948519C3BF2E00E48721 /* Debug */,
+				FF45948619C3BF2E00E48721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF45946619C3BF2E00E48721 /* FamilyBowl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF45946719C3BF2E00E48721 /* FamilyBowl.xcdatamodel */,
+			);
+			currentVersion = FF45946719C3BF2E00E48721 /* FamilyBowl.xcdatamodel */;
+			path = FamilyBowl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF45944719C3BF2E00E48721 /* Project object */;
+}
